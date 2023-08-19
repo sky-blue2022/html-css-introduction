@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/practice.css" />
+    <link rel="stylesheet" href="css/component.css" />
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+    <title>17. CSS: Styling Components</title>
+  </head>
+  <body>
+    <!--Top bar-->
+    <div class="top-bar" style="text-align: center; background-color: white">
+      <a href="index.html" class="top-bar-icon">
+        <img src="img/html5.png" />
+        <img src="img/css3.png" />
+      </a>
+    </div>
+    <!--End top bar-->
+
+    <!--Main-->
+    <h1>Chapter 17. CSS: Styling Components</h1>
+    <h2 style="text-align: center;">Buttons</h2>
+    <p style="text-align: center;">The a tag with Flex Box</p>
+    <div style="display: flex; justify-content: center; padding-bottom: 20px;">
+      <a href="main-page.html" class="btn-flex">Button 1</a>
+    </div>
+    <p style="text-align: center;">The a tag with Inline-block</p>
+    <div style="text-align: center; padding-bottom: 20px;">
+      <a href="main-page.html" class="btn-inline">Button 2</a>
+    </div>
+    <p style="text-align: center;">The button tag with Flex Box</p>
+    <div style="display: flex; justify-content: center; padding-bottom: 20px;">
+      <button onclick="location.href=`main-page.html`" class="btn-flex">Button 3</button>
+    </div>
+    <p style="text-align: center;">The input tag with Flex Box</p>
+    <div style="display: flex; justify-content: center; padding-bottom: 20px;">
+      <input type="button" onclick="location.href=`main-page.html`" value="Button 4" class="btn-flex">
+    </div>
+    <p style="text-align: center;">White background</p>
+    <div style="display: flex; justify-content: center; padding-bottom: 20px;">
+      <a href="main-page.html" class="btn-white-bg">Button 5</a>
+    </div>
+    <p style="text-align: center;">Small size</p>
+    <div style="display: flex; justify-content: center; padding-bottom: 20px;">
+      <a href="main-page.html" class="btn-small">Button 6</a>
+    </div>
+    <p style="text-align: center;">Custom shapes</p>
+    <div style="display: flex; justify-content: center; padding-bottom: 20px;">
+      <div class="btn-group">
+        <a href="#" class="btn-previous">←</a>
+        <a href="#" class="btn-next">→</a>
+      </div>
+    </div>
+    <hr>
+    <h2 style="text-align: center;">Cards</h2>
+    <div style="display: flex; justify-content: center; flex-wrap: wrap; padding: 20px; background-color: azure;">
+      <div class="card">
+        <div class="card-img"></div>
+        <div class="card-body">
+          <div class="card-title"><small>Todays's Pick</small></br><b>Green Salad</b></div>
+          <a href="#" class="card-btn">Open Recipe</a>
+        </div>
+      </div>
+      <div class="card">
+        <a href="#">
+          <div class="card-img"></div>
+          <div class="card-body">
+            <div class="card-title"><small>Todays's Pick</small></br><b>Green Salad</b></div>
+            <div class="card-icon"><img src="img/like.svg"></div>
+          </div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="#">
+          <div class="card-bg">
+            <span class="card-overlay-text">1. Overview</span>
+          </div>
+          <div class="card-body">
+            <div class="card-title"><small>Chapter 1.</small><br><b> Overview of Website Development</b></div>
+            <div class="card-icon"><img src="img/html5.png"><img src="img/css3.png"></div>
+          </div>
+        </a>
+      </div>
+      <div class="card" style="border-radius: 0; padding: 0px 0px 10px 0px;">
+        <a href="#">
+          <div class="card-bg" style="border-radius: 0px;">
+            <span class="card-overlay-text">1. Overview</span>
+          </div>
+          <div class="card-body">
+            <div class="card-title"><small>Chapter 1.</small><br><b> Overview of Website Development</b></div>
+            <div class="card-icon" style="padding-right:10px;"><img src="img/html5.png"><img src="img/css3.png"></div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <hr>
+    <h2 style="text-align: center;">Bars</h2>
+    <div class="top-bar" style="text-align: center;">
+      <a href="#" class="top-bar-icon">
+        <img src="img/html5.png">
+        <img src="img/css3.png">
+      </a>
+    </div>
+    <div class="top-bar" style="display: flex; justify-content: space-between; align-items: center;">
+      <img src="img/hamburger-menu.png" style="height: 20px; margin-left: 10px;">
+        <a href="#" class="top-bar-icon">
+          <img src="img/html5.png">
+          <img src="img/css3.png">
+        </a>
+      <img src="img/search-icon.png" style="height: 30px; margin-right: 10px;">
+    </div>
+    <div class="top-bar" style="display: flex; align-items: center;">
+      <div style="flex-basis: 30%;"></div>
+        <a href="#" class="top-bar-icon" style="flex-basis: 40%; text-align: center;">
+          <img src="img/html5.png">
+          <img src="img/css3.png">
+        </a>
+      <div style="flex-basis: 30%; text-align: right;">
+        <img src="img/search-icon.png" style="height: 30px; margin-right: 10px;">
+      </div>
+    </div>
+    <hr>
+    <h2 style="text-align: center;">Footer</h2>
+    <p style="text-align: center;">See the bottom of this page</p>
+    <!--End Main-->
+
+    <!--Back button-->
+    <div style="display: flex; justify-content: center; padding-top: 30px; padding-bottom: 80px">
+      <a href="index.html" class="btn-small">Back</a>
+    </div>
+    <!--End back button-->
+
+    <!--Footer-->
+    <footer>
+      <div class="btn-group">
+        <a href="chapter16.html" class="btn-previous">←</a>
+        <a href="chapter18.html" class="btn-next">→</a>
+      </div>
+      <p>HTML & CSS Introduction</p>
+    </footer>
+    <!--End footer-->
+  </body>
+</html>

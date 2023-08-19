@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/practice.css" />
+    <link rel="stylesheet" href="css/component.css" />
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+    <title>HTML & CSS Introduction Practice</title>
+
+    <style>
+      body {
+        background: url(img/home-bg.png) no-repeat center top/cover;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .flex-container-home {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+
+      .flex-container-home-nested {
+        display: flex;
+        flex-basis: 50%;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container-home">
+      <div class="flex-container-home-nested">
+        <h1 style="max-width: 300px; font-size: 3rem; text-align: center; color: #2197a2">HTML&CSS Introduction Practice</h1>
+      </div>
+      <div class="flex-container-home-nested" style="flex-direction: column">
+        <div class="flex-container-home-nested" style="align-items: end">
+          <img src="img/html5.png" style="width: auto; height: 80px; margin: 10px" />
+          <img src="img/css3.png" style="width: auto; height: 80px; margin: 10px" />
+        </div>
+        <div class="flex-container-home-nested">
+          <a href="main-page.html" class="btn-flex">START</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/practice.css" />
+    <link rel="stylesheet" href="css/component.css" />
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+    <title>15. CSS: Layout – Flex Box</title>
+  </head>
+  <body>
+    <!--Top bar-->
+    <div class="top-bar" style="text-align: center; background-color: white">
+      <a href="index.html" class="top-bar-icon">
+        <img src="img/html5.png" />
+        <img src="img/css3.png" />
+      </a>
+    </div>
+    <!--End top bar-->
+
+    <!--Main-->
+    <h1>Chapter 15. CSS: Layout – Flex Box</h1>
+    <h2>Flex Box</h2>
+    <h3>Original</h3>
+    <div class="flex-container">
+      <div class="flex-item">item 1</div>
+      <div class="flex-item">item 2</div>
+      <div class="flex-item">item 3</div>
+      <div class="flex-item">item 4</div>
+      <div class="flex-item">item 5</div>
+      <div class="flex-item">item 6</div>
+    </div>
+
+    <h3 style="display: inline-block">display: flex</h3>
+    <div class="flex-container" style="display: flex">
+      <div class="flex-item">item 1</div>
+      <div class="flex-item">item 2</div>
+      <div class="flex-item">item 3</div>
+      <div class="flex-item">item 4</div>
+      <div class="flex-item">item 5</div>
+      <div class="flex-item">item 6</div>
+    </div>
+    <hr />
+    <h2 id="flex-direction">flex-direction</h2>
+    <h3>flex-direction:row</h3>
+    <div class="flex-container" style="display: flex; flex-direction: row">
+      <div class="flex-item">item 1</div>
+      <div class="flex-item">item 2</div>
+      <div class="flex-item">item 3</div>
+      <div class="flex-item">item 4</div>
+      <div class="flex-item">item 5</div>
+      <div class="flex-item">item 6</div>
+    </div>
+
+    <h3>flex-direction:row-reverse</h3>
+    <div class="flex-container" style="display: flex; flex-direction: row-reverse">
+      <div class="flex-item">item 1</div>
+      <div class="flex-item">item 2</div>
+      <div class="flex-item">item 3</div>
+      <div class="flex-item">item 4</div>
+      <div class="flex-item">item 5</div>
+      <div class="flex-item">item 6</div>
+    </div>
+
+    <h3>flex-direction:column</h3>
+    <div class="flex-container" style="display: flex; flex-direction: column">
+      <div class="flex-item">item 1</div>
+      <div class="flex-item">item 2</div>
+      <div class="flex-item">item 3</div>
+      <div class="flex-item">item 4</div>
+      <div class="flex-item">item 5</div>
+      <div class="flex-item">item 6</div>
+    </div>
+
+    <h3>flex-direction:column-reverse</h3>
+    <div class="flex-container" style="display: flex; flex-direction: column-reverse">
+      <div class="flex-item">item 1</div>
+      <div class="flex-item">item 2</div>
+      <div class="flex-item">item 3</div>
+      <div class="flex-item">item 4</div>
+      <div class="flex-item">item 5</div>
+      <div class="flex-item">item 6</div>
+    </div>
+    <hr />
+    <h2 id="flex-wrap">flex-wrap</h2>
+    <h3>flex-wrap: nowrap</h3>
+    <div class="flex-container" style="display: flex; flex-wrap: nowrap">
+      <div class="flex-item">item 1</div>
+      <div class="flex-item">item 2</div>
+      <div class="flex-item">item 3</div>
+      <div class="flex-item">item 4</div>
+      <div class="flex-item">item 5</div>
+      <div class="flex-item">item 6</div>
+      <div class="flex-item">item 7</div>
+    </div>
+
+    <h3>flex-wrap: no-wrap</h3>
+    <div class="flex-container" style="display: flex; flex-wrap: wrap">
+      <div class="flex-item">item 1</div>
+      <div class="flex-item">item 2</div>
+      <div class="flex-item">item 3</div>
+      <div class="flex-item">item 4</div>
+      <div class="flex-item">item 5</div>
+      <div class="flex-item">item 6</div>
+      <div class="flex-item">item 7</div>
+    </div>
+
+    <h3>flex-wrap: wrap-reverse</h3>
+    <div class="flex-container" style="display: flex; flex-wrap: wrap-reverse">
+      <div class="flex-item">item 1</div>
+      <div class="flex-item">item 2</div>
+      <div class="flex-item">item 3</div>
+      <div class="flex-item">item 4</div>
+      <div class="flex-item">item 5</div>
+      <div class="flex-item">item 6</div>
+      <div class="flex-item">item 7</div>
+    </div>
+    <hr />
+    <h2 id="justify-content">justify-content</h2>
+    <h3>Original Position</h3>
+    <div class="flex-container" style="display: flex">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+
+    <h3>justify-content: flex-start</h3>
+    <div class="flex-container" style="display: flex; justify-content: flex-start">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+
+    <h3>justify-content: center</h3>
+    <div class="flex-container" style="display: flex; justify-content: center">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+
+    <h3>justify-content: flex-end</h3>
+    <div class="flex-container" style="display: flex; justify-content: flex-end">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+
+    <h3>justify-content: spece-between</h3>
+    <div class="flex-container" style="display: flex; justify-content: space-between">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+
+    <h3>justify-content: spece-around</h3>
+    <div class="flex-container" style="display: flex; justify-content: space-around">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+    <hr />
+    <h2 id="align-items">align-items</h2>
+    <h3>Original Position</h3>
+    <div class="flex-container" style="display: flex; height: 100px">
+      <div class="flex-item" style="font-size: 2rem">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item" style="font-size: 1.5rem">3</div>
+    </div>
+
+    <h3>align-items: flex-start</h3>
+    <div class="flex-container" style="display: flex; height: 100px; align-items: flex-start">
+      <div class="flex-item" style="font-size: 2rem">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item" style="font-size: 1.5rem">3</div>
+    </div>
+
+    <h3>align-items: center</h3>
+    <div class="flex-container" style="display: flex; height: 100px; align-items: center">
+      <div class="flex-item" style="font-size: 2rem">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item" style="font-size: 1.5rem">3</div>
+    </div>
+
+    <h3>align-items: flex-end</h3>
+    <div class="flex-container" style="display: flex; height: 100px; align-items: flex-end">
+      <div class="flex-item" style="font-size: 2rem">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item" style="font-size: 1.5rem">3</div>
+    </div>
+
+    <h3>align-items: stretch</h3>
+    <div class="flex-container" style="display: flex; height: 100px; align-items: space-between">
+      <div class="flex-item" style="font-size: 2rem">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item" style="font-size: 1.5rem">3</div>
+    </div>
+
+    <h3>align-items: baseline</h3>
+    <div class="flex-container" style="display: flex; height: 100px; align-items: baseline">
+      <div class="flex-item" style="font-size: 2rem">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item" style="font-size: 1.5rem">3</div>
+    </div>
+    <hr />
+    <h2 id="align-content">align-content</h2>
+    <h3>Original Position</h3>
+    <div class="flex-container" style="display: flex; height: 200px; width: 300px; flex-wrap: wrap">
+      <div class="flex-item">item 1</div>
+      <div class="flex-item">item 2</div>
+      <div class="flex-item">item 3</div>
+      <div class="flex-item">item 4</div>
+      <div class="flex-item">item 5</div>
+      <div class="flex-item">item 6</div>
+      <div class="flex-item">item 7</div>
+      <div class="flex-item">item 8</div>
+      <div class="flex-item">item 9</div>
+      <div class="flex-item">item 10</div>
+      <div class="flex-item">item 11</div>
+      <div class="flex-item">item 12</div>
+    </div>
+
+    <h3>align-content: flex-start</h3>
+    <div class="flex-container" style="display: flex; height: 200px; width: 300px; flex-wrap: wrap; align-content: flex-start">
+      <div class="flex-item">item 1</div>
+      <div class="flex-item">item 2</div>
+      <div class="flex-item">item 3</div>
+      <div class="flex-item">item 4</div>
+      <div class="flex-item">item 5</div>
+      <div class="flex-item">item 6</div>
+      <div class="flex-item">item 7</div>
+      <div class="flex-item">item 8</div>
+      <div class="flex-item">item 9</div>
+      <div class="flex-item">item 10</div>
+      <div class="flex-item">item 11</div>
+      <div class="flex-item">item 12</div>
+    </div>
+
+    <h3>align-content: center</h3>
+    <div class="flex-container" style="display: flex; height: 200px; width: 300px; flex-wrap: wrap; align-content: center">
+      <div class="flex-item">item 1</div>
+      <div class="flex-item">item 2</div>
+      <div class="flex-item">item 3</div>
+      <div class="flex-item">item 4</div>
+      <div class="flex-item">item 5</div>
+      <div class="flex-item">item 6</div>
+      <div class="flex-item">item 7</div>
+      <div class="flex-item">item 8</div>
+      <div class="flex-item">item 9</div>
+      <div class="flex-item">item 10</div>
+      <div class="flex-item">item 11</div>
+      <div class="flex-item">item 12</div>
+    </div>
+
+    <h3>align-content: flex-end</h3>
+    <div class="flex-container" style="display: flex; height: 200px; width: 300px; flex-wrap: wrap; align-content: flex-end">
+      <div class="flex-item">item 1</div>
+      <div class="flex-item">item 2</div>
+      <div class="flex-item">item 3</div>
+      <div class="flex-item">item 4</div>
+      <div class="flex-item">item 5</div>
+      <div class="flex-item">item 6</div>
+      <div class="flex-item">item 7</div>
+      <div class="flex-item">item 8</div>
+      <div class="flex-item">item 9</div>
+      <div class="flex-item">item 10</div>
+      <div class="flex-item">item 11</div>
+      <div class="flex-item">item 12</div>
+    </div>
+
+    <h3>align-content: stretch</h3>
+    <div class="flex-container" style="display: flex; height: 200px; width: 300px; flex-wrap: wrap; align-content: stretch">
+      <div class="flex-item">item 1</div>
+      <div class="flex-item">item 2</div>
+      <div class="flex-item">item 3</div>
+      <div class="flex-item">item 4</div>
+      <div class="flex-item">item 5</div>
+      <div class="flex-item">item 6</div>
+      <div class="flex-item">item 7</div>
+      <div class="flex-item">item 8</div>
+      <div class="flex-item">item 9</div>
+      <div class="flex-item">item 10</div>
+      <div class="flex-item">item 11</div>
+      <div class="flex-item">item 12</div>
+    </div>
+
+    <h3>align-content: space-between</h3>
+    <div class="flex-container" style="display: flex; height: 200px; width: 300px; flex-wrap: wrap; align-content: space-between">
+      <div class="flex-item">item 1</div>
+      <div class="flex-item">item 2</div>
+      <div class="flex-item">item 3</div>
+      <div class="flex-item">item 4</div>
+      <div class="flex-item">item 5</div>
+      <div class="flex-item">item 6</div>
+      <div class="flex-item">item 7</div>
+      <div class="flex-item">item 8</div>
+      <div class="flex-item">item 9</div>
+      <div class="flex-item">item 10</div>
+      <div class="flex-item">item 11</div>
+      <div class="flex-item">item 12</div>
+    </div>
+
+    <h3>align-content: space-around</h3>
+    <div class="flex-container" style="display: flex; height: 200px; width: 300px; flex-wrap: wrap; align-content: space-around">
+      <div class="flex-item">item 1</div>
+      <div class="flex-item">item 2</div>
+      <div class="flex-item">item 3</div>
+      <div class="flex-item">item 4</div>
+      <div class="flex-item">item 5</div>
+      <div class="flex-item">item 6</div>
+      <div class="flex-item">item 7</div>
+      <div class="flex-item">item 8</div>
+      <div class="flex-item">item 9</div>
+      <div class="flex-item">item 10</div>
+      <div class="flex-item">item 11</div>
+      <div class="flex-item">item 12</div>
+    </div>
+    <hr />
+    <h2 id="align-self">align-self</h2>
+    <h3>Original Position</h3>
+    <div class="flex-container" style="display: flex; height: 100px">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+
+    <h3>align-self: flex-start</h3>
+    <div class="flex-container" style="display: flex; height: 100px">
+      <div class="flex-item">1</div>
+      <div class="flex-item" style="align-self: flex-start">2</div>
+      <div class="flex-item">3</div>
+    </div>
+
+    <h3>align-self: center</h3>
+    <div class="flex-container" style="display: flex; height: 100px">
+      <div class="flex-item">1</div>
+      <div class="flex-item" style="align-self: center">2</div>
+      <div class="flex-item">3</div>
+    </div>
+
+    <h3>align-self: flex-end</h3>
+    <div class="flex-container" style="display: flex; height: 100px">
+      <div class="flex-item">1</div>
+      <div class="flex-item" style="align-self: flex-end">2</div>
+      <div class="flex-item">3</div>
+    </div>
+
+    <h3>align-self: stretch (align-items:center) @ Parent</h3>
+    <div class="flex-container" style="display: flex; height: 100px; align-items: center">
+      <div class="flex-item">1</div>
+      <div class="flex-item" style="align-self: stretch">2</div>
+      <div class="flex-item">3</div>
+    </div>
+
+    <h3>align-self: baseline (align-items:center) @ Parent</h3>
+    <div class="flex-container" style="display: flex; height: 100px; align-items: center">
+      <div class="flex-item" style="font-size: 2rem">1</div>
+      <div class="flex-item" style="align-self: baseline">2</div>
+      <div class="flex-item" style="font-size: 1.5rem">3</div>
+    </div>
+    <hr />
+    <h2 id="flex-grow">flex-grow</h2>
+    <h3>Original Flex Item Size</h3>
+    <div class="flex-container-no-padding">
+      <div class="flex-item-to-grow-1"></div>
+      <div class="flex-item-to-grow-2"></div>
+      <div class="flex-item-to-grow-3"></div>
+    </div>
+
+    <h3>Grow Evenly</h3>
+    <div class="flex-container-no-padding">
+      <div class="flex-item-to-grow-1" style="flex-grow: 1">flex-grow: 1</div>
+      <div class="flex-item-to-grow-2" style="flex-grow: 1">flex-grow: 1</div>
+      <div class="flex-item-to-grow-3" style="flex-grow: 1">flex-grow: 1</div>
+    </div>
+
+    <h3>Grow Red and Blue with the Same Ratio</h3>
+    <div class="flex-container-no-padding">
+      <div class="flex-item-to-grow-1" style="flex-grow: 0">flex-grow: 0</div>
+      <div class="flex-item-to-grow-2" style="flex-grow: 1">flex-grow: 1</div>
+      <div class="flex-item-to-grow-3" style="flex-grow: 1">flex-grow: 1</div>
+    </div>
+
+    <h3>Grow Red and Blue with 1:2 Ratio</h3>
+    <div class="flex-container-no-padding">
+      <div class="flex-item-to-grow-1" style="flex-grow: 0">flex-grow: 0</div>
+      <div class="flex-item-to-grow-2" style="flex-grow: 1">flex-grow: 1</div>
+      <div class="flex-item-to-grow-3" style="flex-grow: 2">flex-grow: 2</div>
+    </div>
+
+    <h3>Grow Blue Only</h3>
+    <div class="flex-container-no-padding">
+      <div class="flex-item-to-grow-1" style="flex-grow: 0">flex-grow: 0</div>
+      <div class="flex-item-to-grow-2" style="flex-grow: 0">flex-grow: 0</div>
+      <div class="flex-item-to-grow-3" style="flex-grow: 1">flex-grow: 1</div>
+    </div>
+    <hr />
+    <h2 id="flex-shrink">flex-shrink</h2>
+    <h3>Flex Item Size with No Shrink</h3>
+    <div class="flex-container-no-padding">
+      <div class="flex-item-to-shrink-1" style="flex-shrink: 0"></div>
+      <div class="flex-item-to-shrink-2" style="flex-shrink: 0"></div>
+      <div class="flex-item-to-shrink-3" style="flex-shrink: 0"></div>
+    </div>
+
+    <h3>Shrink Evenly</h3>
+    <div class="flex-container-no-padding">
+      <div class="flex-item-to-shrink-1" style="flex-shrink: 1">flex-shrink: 1</div>
+      <div class="flex-item-to-shrink-2" style="flex-shrink: 1">flex-shrink: 1</div>
+      <div class="flex-item-to-shrink-3" style="flex-shrink: 1">flex-shrink: 1</div>
+    </div>
+
+    <h3>Shrink Red and Blue with the Same Ratio</h3>
+    <div class="flex-container-no-padding">
+      <div class="flex-item-to-shrink-1" style="flex-shrink: 0">flex-shrink: 0</div>
+      <div class="flex-item-to-shrink-2" style="flex-shrink: 1">flex-shrink: 1</div>
+      <div class="flex-item-to-shrink-3" style="flex-shrink: 1">flex-shrink: 1</div>
+    </div>
+
+    <h3>Shrink Red and Blue with 1:2 Ratio</h3>
+    <div class="flex-container-no-padding">
+      <div class="flex-item-to-shrink-1" style="flex-shrink: 0">flex-shrink: 0</div>
+      <div class="flex-item-to-shrink-2" style="flex-shrink: 1">flex-shrink: 1</div>
+      <div class="flex-item-to-shrink-3" style="flex-shrink: 2">flex-shrink: 2</div>
+    </div>
+
+    <h3>Shrink Blue Only</h3>
+    <div class="flex-container-no-padding">
+      <div class="flex-item-to-shrink-1" style="flex-shrink: 0">flex-shrink: 0</div>
+      <div class="flex-item-to-shrink-2" style="flex-shrink: 0">flex-shrink: 0</div>
+      <div class="flex-item-to-shrink-3" style="flex-shrink: 1">flex-shrink: 1</div>
+    </div>
+    <hr />
+    <h2 id="flex-basis">flex-basis</h2>
+    <h3>Original Flex Item Size - Horizontal Layout</h3>
+    <div class="flex-container-no-padding">
+      <div class="flex-item-to-grow-1"></div>
+      <div class="flex-item-to-grow-2"></div>
+      <div class="flex-item-to-grow-3"></div>
+    </div>
+
+    <h3>Horizontal Layout with flex-basis</h3>
+    <div class="flex-container-no-padding">
+      <div class="flex-item-to-grow-1" style="flex-basis: 25%">flex-basis: 25%</div>
+      <div class="flex-item-to-grow-2" style="flex-basis: 25%">flex-basis: 25%</div>
+      <div class="flex-item-to-grow-3" style="flex-basis: 50%">flex-basis: 50%</div>
+    </div>
+
+    <h3>Original Flex Item Size - Vertical Layout</h3>
+    <div class="flex-container-no-padding" style="flex-direction: column; height: 500px; width: 50px">
+      <div class="flex-item-to-grow-1"></div>
+      <div class="flex-item-to-grow-2"></div>
+      <div class="flex-item-to-grow-3"></div>
+    </div>
+
+    <h3>Vertical Layout with flex-basis</h3>
+    <div class="flex-container-no-padding" style="flex-direction: column; height: 500px; width: 50px">
+      <div class="flex-item-to-grow-1" style="flex-basis: 25%">flex-basis: 25%</div>
+      <div class="flex-item-to-grow-2" style="flex-basis: 25%">flex-basis: 25%</div>
+      <div class="flex-item-to-grow-3" style="flex-basis: 50%">flex-basis: 50%</div>
+    </div>
+    <hr />
+    <h2 id="margin-auto">margin: auto with Flex Box</h2>
+    <div style="display: flex">
+      <div>
+        <h3>1</h3>
+        <div class="flex-container-for-margin-auto">
+          <div class="flex-item-margin-auto"></div>
+        </div>
+      </div>
+      <div>
+        <h3>2</h3>
+        <div class="flex-container-for-margin-auto">
+          <div class="flex-item-margin-auto" style="margin-left: auto; margin-right: auto"></div>
+        </div>
+      </div>
+      <div>
+        <h3>3</h3>
+        <div class="flex-container-for-margin-auto">
+          <div class="flex-item-margin-auto" style="margin-left: auto"></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex">
+      <div>
+        <h3>4</h3>
+        <div class="flex-container-for-margin-auto">
+          <div class="flex-item-margin-auto" style="margin-top: auto; margin-bottom: auto"></div>
+        </div>
+      </div>
+      <div>
+        <h3>5</h3>
+        <div class="flex-container-for-margin-auto">
+          <div class="flex-item-margin-auto" style="margin: auto"></div>
+        </div>
+      </div>
+      <div>
+        <h3>6</h3>
+        <div class="flex-container-for-margin-auto">
+          <div class="flex-item-margin-auto" style="margin-left: auto; margin-top: auto; margin-bottom: auto"></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex">
+      <div>
+        <h3>7</h3>
+        <div class="flex-container-for-margin-auto">
+          <div class="flex-item-margin-auto" style="margin-top: auto"></div>
+        </div>
+      </div>
+      <div>
+        <h3>8</h3>
+        <div class="flex-container-for-margin-auto">
+          <div class="flex-item-margin-auto" style="margin-top: auto; margin-left: auto; margin-right: auto"></div>
+        </div>
+      </div>
+      <div>
+        <h3>9</h3>
+        <div class="flex-container-for-margin-auto">
+          <div class="flex-item-margin-auto" style="margin-top: auto; margin-left: auto"></div>
+        </div>
+      </div>
+    </div>
+    <ol>
+      <li>Original Position</li>
+      <li>margin-left & right: auto</li>
+      <li>margin-left: auto</li>
+      <li>margin-top & bottom: auto</li>
+      <li>margin: auto</li>
+      <li>margin-left, top & bottom: auto</li>
+      <li>margin-top: auto</li>
+      <li>margin-top, left & right: auto</li>
+      <li>margin-top & left: auto</li>
+    </ol>
+    <hr />
+    <h2 id="inline-flex">Inline Flex Box</h2>
+    <h3>Flex Box</h3>
+    <div class="flex-container" style="display: flex; width: 120px; margin: 5px">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+
+    <div class="flex-container" style="display: flex; justify-content: flex-end; width: 120px; margin: 5px">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+
+    <h3>Inline Flex Box</h3>
+    <div class="flex-container" style="display: inline-flex; width: 120px; margin: 5px">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+
+    <div class="flex-container" style="display: inline-flex; justify-content: flex-end; width: 120px; margin: 5px">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+    <hr />
+    <h2 id="nested-flex">Nested Flex Box</h2>
+    <h3>Layout 1</h3>
+    <div class="flex-container-main">
+      <div class="flex-container-nested" style="border: solid 2px green; background-color: lightcyan">
+        <div class="flex-container-nested" style="border: solid 2px orange; background-color: lightyellow"></div>
+        <div class="flex-container-nested" style="border: solid 2px orange; background-color: lightyellow"></div>
+      </div>
+      <div class="flex-container-nested" style="border: solid 2px green; background-color: lightcyan"></div>
+    </div>
+
+    <h3>Layout 1 with Content in the Center</h3>
+    <div class="flex-container-main">
+      <div class="flex-container-nested" style="border: solid 2px green; background-color: lightcyan">
+        <div class="flex-container-nested" style="border: solid 2px orange; background-color: lightyellow; align-items: center; justify-content: center">Content</div>
+        <div class="flex-container-nested" style="border: solid 2px orange; background-color: lightyellow; align-items: center; justify-content: center">Content</div>
+      </div>
+      <div class="flex-container-nested" style="border: solid 2px green; background-color: lightcyan"></div>
+    </div>
+
+    <h3>Layout 2</h3>
+    <div class="flex-container-main">
+      <div class="flex-container-nested" style="flex-direction: column; border: solid 2px green; background-color: lightcyan">
+        <div class="flex-container-nested" style="border: solid 2px orange; background-color: lightyellow"></div>
+        <div class="flex-container-nested" style="border: solid 2px orange; background-color: lightyellow"></div>
+      </div>
+      <div class="flex-container-nested" style="border: solid 2px green; background-color: lightcyan"></div>
+    </div>
+
+    <h3>Layout 3</h3>
+    <div class="flex-container-main">
+      <div class="flex-container-nested" style="flex-direction: column; border: solid 2px green; background-color: lightcyan">
+        <div class="flex-container-nested" style="border: solid 2px orange; background-color: lightyellow">
+          <div class="flex-container-nested" style="border: solid 2px lightcoral; background-color: pink"></div>
+          <div class="flex-container-nested" style="border: solid 2px lightcoral; background-color: pink"></div>
+        </div>
+        <div class="flex-container-nested" style="border: solid 2px orange; background-color: lightyellow"></div>
+      </div>
+      <div class="flex-container-nested" style="border: solid 2px green; background-color: lightcyan"></div>
+    </div>
+    <!--End Main-->
+
+    <!--Back button-->
+    <div style="display: flex; justify-content: center; padding-top: 30px; padding-bottom: 80px">
+      <a href="index.html" class="btn-small">Back</a>
+    </div>
+    <!--End back button-->
+
+    <!--Footer-->
+    <footer>
+      <div class="btn-group">
+        <a href="chapter14.html" class="btn-previous">←</a>
+        <a href="chapter16.html" class="btn-next">→</a>
+      </div>
+      <p>HTML & CSS Introduction</p>
+    </footer>
+    <!--End footer-->
+  </body>
+</html>

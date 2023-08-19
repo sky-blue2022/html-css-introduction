@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/practice.css" />
+    <link rel="stylesheet" href="css/component.css" />
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+    <title>11. CSS: Styling Text and Images</title>
+  </head>
+  <body>
+    <!--Top bar-->
+    <div class="top-bar" style="text-align: center; background-color: white">
+      <a href="index.html" class="top-bar-icon">
+        <img src="img/html5.png" />
+        <img src="img/css3.png" />
+      </a>
+    </div>
+    <!--End top bar-->
+
+    <!--Main-->
+    <h1>Chapter 11. CSS: Styling Text and Images</h1>
+    <h2>Font Size</h2>
+    <h3>Font Size Original</h3>
+    <div class="font-size-box">
+      <h1>h1 Font Size</h1>
+      <h2>h2 Font Size</h2>
+      <h3>h3 Font Size</h3>
+      <h4>h4 Font Size</h4>
+      <h5>h5 Font Size</h5>
+      <h6>h6 Font Size</h6>
+      <p>Paragraph Font Size</p>
+    </div>
+
+    <h3 id="parent-font-size">Font Size: Parent Font Size 10px (Child Font Size Original)</h3>
+    <div class="font-size-box" style="font-size: 10px">
+      <h1>h1 Font Size</h1>
+      <h2>h2 Font Size</h2>
+      <h3>h3 Font Size</h3>
+      <h4>h4 Font Size</h4>
+      <h5>h5 Font Size</h5>
+      <h6>h6 Font Size</h6>
+      <p>Paragraph Font Size</p>
+    </div>
+
+    <h3 id="font-size-unit">Font Size: Parent Font Size 10px (Child Font Size with Different Unit)</h3>
+    <div class="font-size-box" style="font-size: 10px">
+      <h1>h1 Font Size: No Setting</h1>
+      <h1 style="font-size: 2em">h1 Font Size: 2em</h1>
+      <h1 style="font-size: 200%">h1 Font Size: 200%</h1>
+      <h1 style="font-size: 20px">h1 Font Size: 20px</h1>
+      <h1 style="font-size: 2rem">h1 Font Size: 2 rem</h1>
+    </div>
+    <hr />
+    <h2 id="font-color">Font Color</h2>
+    <h3>No color settings</h3>
+    <div>
+      1st layer
+      <div>
+        2nd layer
+        <div>
+          3rd layer
+          <div>4th layer</div>
+        </div>
+      </div>
+    </div>
+
+    <h3>Change at 1st layer</h3>
+    <div style="color: red">
+      1st layer
+      <div>
+        2nd layer
+        <div>
+          3rd layer
+          <div>4th layer</div>
+        </div>
+      </div>
+    </div>
+
+    <h3>Change at 2nd layer</h3>
+    <div>
+      1st layer
+      <div style="color: red">
+        2nd layer
+        <div>
+          3rd layer
+          <div>4th layer</div>
+        </div>
+      </div>
+    </div>
+
+    <h3>Change at 3rd layer</h3>
+    <div>
+      1st layer
+      <div>
+        2nd layer
+        <div style="color: red">
+          3rd layer
+          <div>4th layer</div>
+        </div>
+      </div>
+    </div>
+
+    <h3>Change at 4th layer</h3>
+    <div>
+      1st layer
+      <div>
+        2nd layer
+        <div>
+          3rd layer
+          <div style="color: red">4th layer</div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <h2 id="web-font">Font Family</h2>
+    <p>1. Font Family: Original</p>
+    <p style="font-family: serif">2. Font Family: Serif</p>
+    <p style="font-family: roboto">3. Font Family: Roboto</p>
+    <p style="font-family: roboto, sans-serif">4. Font Family: Roboto, Sans-Serif</p>
+    <p style="font-family: monospace">5. Font Family: monospace</p>
+    <hr />
+    <h2 id="font-weight">Font Weight</h2>
+    <p>Font Weight: Original</p>
+    <p style="font-weight: 100">Font Weight: 100</p>
+    <p style="font-weight: 200">Font Weight: 200</p>
+    <p style="font-weight: 300">Font Weight: 300</p>
+    <p style="font-weight: 400">Font Weight: 400</p>
+    <p style="font-weight: 500">Font Weight: 500</p>
+    <p style="font-weight: 600">Font Weight: 600</p>
+    <p style="font-weight: 700">Font Weight: 700</p>
+    <p style="font-weight: 800">Font Weight: 800</p>
+    <p style="font-weight: 900">Font Weight: 900</p>
+    <p style="font-weight: lighter">Font Weight: lighter</p>
+    <p style="font-weight: bolder">Font Weight: bolder</p>
+    <p style="font-weight: bold">Font Weight: bold</p>
+    <hr />
+    <h2 id="font-style">Font Style</h2>
+    <p style="font-weight: 400; font-style: italic">Font Weight & Style: 400 Italic (CSS)</p>
+    <p style="font-weight: 400">
+      <i>Font Weight & Style: 400 Italic (HTML i tag)</i>
+    </p>
+    <p style="font-weight: 400">
+      <em>Font Weight & Style: 400 Italic (HTML em tag)</em>
+    </p>
+    <hr />
+    <h2 id="text-decoration">Text Decoration</h2>
+    <h3>Add standard decoration lines</h3>
+    <p>Text Decoration: Original</p>
+    <p style="text-decoration: none">Text Decoration: None</p>
+    <p style="text-decoration: underline">Text Decoration: Underliine</p>
+    <p style="text-decoration: overline">Text Decoration: Overline</p>
+    <p style="text-decoration: line-through">Text Decoration: Line Through (Strikethrough)</p>
+    <p style="text-decoration: underline overline">Text Decoration: Underline and Overline</p>
+    <h3>Add design to the decoration line</h3>
+    <p style="text-decoration: underline">Text Decoration: Underline</p>
+    <p style="text-decoration: underline wavy">Text Decoration: Underline Wavy</p>
+    <p style="text-decoration: underline wavy blue">Text Decoration: Underline Wavy Blue</p>
+    <p style="text-decoration: underline wavy blue 2px">Text Decoration: Underline Wavy Blue 2px</p>
+    <hr />
+    <h2 id="line-height">Line Height</h2>
+    <p class="outline">Line Height: Original</p>
+    <p class="outline" style="line-height: 1"><b>Line Height: 1</b> – "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+    <p class="outline" style="line-height: 1.5">
+      <b>Line Height: 1.5</b> – "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    </p>
+    <p class="outline" style="line-height: 2"><b>Line Height: 2</b> – "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+    <p class="outline" style="line-height: 20px">
+      <b>Line Height: 20px</b> – "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    </p>
+    <p class="outline" style="line-height: 30px">
+      <b>Line Height: 30px</b> – "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    </p>
+    <hr />
+    <h2 id="letter-spacing">Letter Spacing</h2>
+    <p class="outline">Line Spacing: Original</p>
+    <p class="outline" style="letter-spacing: 0rem">
+      <b>Line Spacing: 0rem</b> – "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    </p>
+    <p class="outline" style="letter-spacing: 0.05rem">
+      <b>Line Spacing: 0.05rem</b> – "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    </p>
+    <p class="outline" style="letter-spacing: 0.1rem">
+      <b>Line Spacing: 0.1rem</b> – "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    </p>
+    <p class="outline" style="letter-spacing: 0.15rem">
+      <b>Line Spacing: 0.15rem</b> – "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    </p>
+    <hr />
+    <h2 id="text-align-1">Text Align</h2>
+    <h3>Text Align within the Element</h3>
+    <p style="border: 1px dotted #26bcce">Text Align: Original</p>
+    <p style="border: 1px dotted #26bcce">
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat."
+    </p>
+    <p class="outline" style="text-align: left">Text Align: Left</p>
+    <p class="outline" style="text-align: left">
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat."
+    </p>
+    <p class="outline" style="text-align: right">Text Align: Right</p>
+    <p class="outline" style="text-align: right">
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat."
+    </p>
+    <p class="outline" style="text-align: center">Text Align: Center</p>
+    <p class="outline" style="text-align: center">
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat."
+    </p>
+    <p class="outline" style="text-align: justify">Text Align: Justify</p>
+    <p class="outline" style="text-align: justify">
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat."
+    </p>
+
+    <h3 id="text-align-2">Text Align Relative to the Parent Element</h3>
+    <div class="parent-box">
+      <a class="child-box">original position</a>
+    </div>
+    <div class="parent-box" style="text-align: left">
+      <a class="child-box">text-align:left</a>
+    </div>
+    <div class="parent-box" style="text-align: center">
+      <a class="child-box" style="text-align: right">text-align:center</a>
+    </div>
+    <div class="parent-box" style="text-align: right">
+      <a class="child-box" style="text-align: right">text-align:right</a>
+    </div>
+
+    <h3 id="text-align-3">Text Align Inheritance</h3>
+    <div class="parent-box" style="width: 300px; text-align: right">
+      <div class="child-box">
+        <span>ABC</span>
+      </div>
+    </div>
+    <hr />
+    <h2>Vertical Align</h2>
+    <h3 id="vertical-align-1">Vertical Align (Small Text)</h3>
+    <p class="vertical-align-check">Vertical Align: Original <span class="small-text">Original</span></p>
+    <p class="vertical-align-check">
+      Vertical Align: Baseline
+      <span class="small-text" style="vertical-align: baseline">Baseline</span>
+    </p>
+    <p class="vertical-align-check">
+      Vertical Align: Top
+      <span class="small-text" style="vertical-align: top">Top</span>
+    </p>
+    <p class="vertical-align-check">
+      Vertical Align: Bottom
+      <span class="small-text" style="vertical-align: bottom">Bottom</span>
+    </p>
+    <p class="vertical-align-check">
+      Vertical Align: Middle
+      <span class="small-text" style="vertical-align: middle">Middle</span>
+    </p>
+    <p class="vertical-align-check">
+      Vertical Align: Super
+      <span class="small-text" style="vertical-align: super">Super</span>
+    </p>
+    <p class="vertical-align-check">
+      Vertical Align: Sub
+      <span class="small-text" style="vertical-align: sub">Sub</span>
+    </p>
+    <p class="vertical-align-check">
+      Vertical Align: 10px
+      <span class="small-text" style="vertical-align: 10px">10px</span>
+    </p>
+    <p class="vertical-align-check">
+      Vertical Align: -10px
+      <span class="small-text" style="vertical-align: -10px">-10px</span>
+    </p>
+
+    <h3 id="vertical-align-2">Vertical Align (Icons)</h3>
+    <p class="vertical-align-check">
+      Vertical Align: Original
+      <img src="img/smile.png" width="15px" />
+    </p>
+    <p class="vertical-align-check">
+      Vertical Align: Baseline
+      <img src="img/smile.png" width="15px" style="vertical-align: baseline" />
+    </p>
+    <p class="vertical-align-check">
+      Vertical Align: Top
+      <img src="img/smile.png" width="15px" style="vertical-align: top" />
+    </p>
+    <p class="vertical-align-check">
+      Vertical Align: Bottom
+      <img src="img/smile.png" width="15px" style="vertical-align: bottom" />
+    </p>
+    <p class="vertical-align-check">
+      Vertical Align: Middle
+      <img src="img/smile.png" width="15px" style="vertical-align: middle" />
+    </p>
+    <p class="vertical-align-check">
+      Vertical Align: Super
+      <img src="img/smile.png" width="15px" style="vertical-align: super" />
+    </p>
+    <p class="vertical-align-check">
+      Vertical Align: Sub
+      <img src="img/smile.png" width="15px" style="vertical-align: sub" />
+    </p>
+    <p class="vertical-align-check">
+      Vertical Align: 10px
+      <img src="img/smile.png" width="15px" style="vertical-align: 10px" />
+    </p>
+    <p class="vertical-align-check">
+      Vertical Align: -10px
+      <img src="img/smile.png" width="15px" style="vertical-align: -10px" />
+    </p>
+
+    <h3 id="vertical-align-3">Vertical Align in Table Cells</h3>
+    <table>
+      <tr>
+        <th>header</th>
+        <th>header</th>
+        <th>header</th>
+      </tr>
+      <tr>
+        <td style="vertical-align: top">
+          <img src="img/smile.png" width="30px" />
+        </td>
+        <td style="vertical-align: middle">
+          <img src="img/smile.png" width="30px" />
+        </td>
+        <td style="vertical-align: bottom">
+          <img src="img/smile.png" width="30px" />
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top">vertical-align: top</td>
+        <td style="vertical-align: middle">vertical-align: middle</td>
+        <td style="vertical-align: bottom">vertical-align: bottom</td>
+      </tr>
+    </table>
+    <hr />
+    <h2 id="styling-images-1">Styling Images</h2>
+    <h3>Images as an Inline Element</h3>
+    <img src="img/salad.jpg" width="200px" />
+    <img src="img/salad.jpg" width="200px" />
+    <img src="img/salad.jpg" width="200px" />
+    <img src="img/salad.jpg" width="200px" />
+    <img src="img/salad.jpg" width="200px" />
+    <img src="img/salad.jpg" width="200px" />
+    <img src="img/salad.jpg" width="200px" />
+    <img src="img/salad.jpg" width="200px" />
+    <div class="size-object">Block Element Example</div>
+    <div class="size-object">Block Element Example</div>
+    <span class="size-object"> Inline Element Example</span>
+    <span class="size-object"> Inline Element Example</span>
+    <span class="size-object"> Inline Element Example</span>
+    <span class="size-object"> Inline Element Example</span>
+    <span class="size-object"> Inline Element Example</span>
+    <span class="size-object"> Inline Element Example</span>
+
+    <h3 id="styling-images-2">Text Align for Image Element</h3>
+    <div class="parent-box" style="text-align: left">
+      <img src="img/salad.jpg" height="50px" />
+    </div>
+    <div class="parent-box" style="text-align: center">
+      <img src="img/salad.jpg" height="50px" />
+    </div>
+    <div class="parent-box" style="text-align: right">
+      <img src="img/salad.jpg" height="50px" />
+    </div>
+
+    <h3 id="styling-images-3">Adding Paddings and Margins to Image</h3>
+    <div style="background-color: #55d0dc; text-align: center; width: 300px; margin: 5px">
+      <img src="img/salad.jpg" style="height: 50px; margin: 20px; padding: 15px; background-color: #b3ebef" />
+    </div>
+    <div style="background-color: #55d0dc; text-align: center; width: 300px; margin: 5px">
+      <span style="height: 50px; margin: 20px; padding: 15px; background-color: #b3ebef">Inline Element</span>
+    </div>
+
+    <h3>Multiple Images with Paddings and Margins</h3>
+    <img src="img/salad.jpg" style="height: 50px; margin: 20px; padding: 20px; background-color: #b3ebef" />
+    <img src="img/salad.jpg" style="height: 50px; margin: 20px; padding: 20px; background-color: #b3ebef" />
+    <img src="img/salad.jpg" style="height: 50px; margin: 20px; padding: 20px; background-color: #b3ebef" />
+    <img src="img/salad.jpg" style="height: 50px; margin: 20px; padding: 20px; background-color: #b3ebef" />
+    <img src="img/salad.jpg" style="height: 50px; margin: 20px; padding: 20px; background-color: #b3ebef" />
+    <img src="img/salad.jpg" style="height: 50px; margin: 20px; padding: 20px; background-color: #b3ebef" />
+    <img src="img/salad.jpg" style="height: 50px; margin: 20px; padding: 20px; background-color: #b3ebef" />
+    <img src="img/salad.jpg" style="height: 50px; margin: 20px; padding: 20px; background-color: #b3ebef" />
+    <br />
+    <br />
+    <span style="height: 50px; padding: 20px; margin: 20px; border: 1px dotted #b3ebef; background-color: #55d0dc">Inline Element</span>
+    <span style="height: 50px; padding: 20px; margin: 20px; border: 1px dotted #b3ebef; background-color: #55d0dc">Inline Element</span>
+    <span style="height: 50px; padding: 20px; margin: 20px; border: 1px dotted #b3ebef; background-color: #55d0dc">Inline Element</span>
+    <span style="height: 50px; padding: 20px; margin: 20px; border: 1px dotted #b3ebef; background-color: #55d0dc">Inline Element</span>
+    <span style="height: 50px; padding: 20px; margin: 20px; border: 1px dotted #b3ebef; background-color: #55d0dc">Inline Element</span>
+    <span style="height: 50px; padding: 20px; margin: 20px; border: 1px dotted #b3ebef; background-color: #55d0dc">Inline Element</span>
+    <span style="height: 50px; padding: 20px; margin: 20px; border: 1px dotted #b3ebef; background-color: #55d0dc">Inline Element</span>
+    <span style="height: 50px; padding: 20px; margin: 20px; border: 1px dotted #b3ebef; background-color: #55d0dc">Inline Element</span>
+    <br />
+    <br />
+    <br />
+    <hr />
+    <h2 id="float">float: left or right</h2>
+    <p>
+      <img src="img/salad.jpg" style="height: 50px; margin: 2px; float: left" /><b>float: left </b>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    </p>
+    <p>
+      <img src="img/salad.jpg" style="height: 50px; margin: 2px; float: right" /><b>float: right </b>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    </p>
+    <!--End Main-->
+
+    <!--Back button-->
+    <div style="display: flex; justify-content: center; padding-top: 30px; padding-bottom: 80px">
+      <a href="index.html" class="btn-small">Back</a>
+    </div>
+    <!--End back button-->
+
+    <!--Footer-->
+    <footer>
+      <div class="btn-group">
+        <a href="chapter10.html" class="btn-previous">←</a>
+        <a href="chapter12.html" class="btn-next">→</a>
+      </div>
+      <p>HTML & CSS Introduction</p>
+    </footer>
+    <!--End footer-->
+  </body>
+</html>

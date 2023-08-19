@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/practice.css" />
+    <link rel="stylesheet" href="css/component.css" />
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+    <title>10. CSS: Sizing and Spacing</title>
+  </head>
+  <body>
+    <!--Top bar-->
+    <div class="top-bar" style="text-align: center; background-color: white">
+      <a href="index.html" class="top-bar-icon">
+        <img src="img/html5.png" />
+        <img src="img/css3.png" />
+      </a>
+    </div>
+    <!--End top bar-->
+
+    <!--Main-->
+    <h1>Chapter 10. CSS: Sizing and Spacing</h1>
+    
+    <h2>Width</h2>
+    <div class="size-object">div element: Original</div>
+    <div class="size-object" style="width:300px">div element: Width 300px</div>
+    <p class="size-object">p element: Original</p>
+    <p class="size-object" style="width:300px">p element: Width 300px</p>
+    <a class="size-object">a element: Original</a>
+    <a class="size-object" style="width:300px">a element: Width 300px</a>
+    <span class="size-object">span element: Original</span>
+    <span class="size-object" style="width:300px">span element: Width 300px</span>
+    <hr>
+    <h2 id="height">Height</h2>
+    <div class="size-object">div element: Original</div>
+    <div class="size-object" style="height:100px">div element: Height 100px</div>
+    <p class="size-object">p element: Original</p>
+    <p class="size-object" style="height:100px">p element: Height 100px</p>
+    <a class="size-object">a element: Original</a>
+    <a class="size-object" style="height:100px">a element: Height 100px</a>
+    <span class="size-object">span element: Original</span>
+    <span class="size-object" style="height:100px">span element: Height 100px</span>
+    <hr>
+    <h2 id="padding">Padding</h2>
+    <div class="size-object">div element: Original</div>
+    <div class="size-object" style="padding:20px">div element: Padding 10px</div>
+    <p class="size-object">p element: Original</p>
+    <p class="size-object" style="padding:20px">p element: Padding 10px</p>
+    <a class="size-object">a element: Original</a>
+    <a class="size-object" style="padding:20px">a element: Padding 10px</a>
+    <span class="size-object">span element: Original</span>
+    <span class="size-object" style="padding:20px">span element: Padding 10px</span>
+    <hr>
+    <h2 id="padding-nesting">Padding: nesting</h2>
+    <div class="size-object" style="padding:10px">
+      <div class="size-child-object">div child element</div>
+      <div class="size-child-object">div child element</div>
+    </div>
+    <hr>
+    <h2 id="padding-multiple-value">Padding: multiple values</h2>
+    <div class="size-object" style="width:200px;">
+      <div class="size-child-object">Before padding</div>
+    </div>
+    <div class="size-object" style="width:200px; padding:10px">
+      <div class="size-child-object">Padding 10px</div>
+    </div>
+    <div class="size-object" style="width:200px; padding:5px 10px">
+      <div class="size-child-object">Padding 5px 10px</div>
+    </div>
+    <div class="size-object" style="width:200px; padding:5px 10px 1px">
+      <div class="size-child-object">Padding 5px 10px 1px</div>
+    </div>
+    </div>
+    <div class="size-object" style="width:200px; padding:5px 10px 1px 2px">
+      <div class="size-child-object">Padding 5px 10px 1px 2px</div>
+    </div>
+    <hr>
+    <h2 id="margin">Margin</h2>
+    <div class="size-object" style="margin:initial">div element: Original</div>
+    <div class="size-object" style="margin:30px">div element: margin 30px</div>
+    <p class="size-object" style="margin:initial">p element: Original</p>
+    <p class="size-object" style="margin:30px">p element: margin 30px</p>
+    <a class="size-object" style="margin:initial">a element: Original</a>
+    <a class="size-object" style="margin:30px">a element: margin 30px</a>
+    <br>
+    <span class="size-object" style="margin:initial">span element: Original</span>
+    <span class="size-object" style="margin:30px">span element: margin 30px</span>
+    <hr>
+    <h2 id="margin-overlap">Margin: Overlap</h2>
+    <div class="size-object" style="height:20px; margin:20px">height:20px; margin:20px</div>
+    <div class="size-object" style="height:20px; margin:20px">height:20px; margin:20px</div>
+    <div class="size-object" style="height:20px; margin:20px">height:20px; margin:20px</div>
+    <hr>
+    <h2>Margin: Child Margin and Parent Padding</h2>
+    <div class="size-object" style="width:300px; padding:20px">
+      <div class="size-child-object" style="height:20px; margin:20px; border: 1px dotted">hight:20px; margin: 20px</div>
+    </div>
+    <hr>
+    <h2 id="margin-multiple-values">Margin: multiple values</h2>
+    <div class="size-object" style="display:inline-block">
+      <div class="size-child-object" style="width:200px;">Before padding</div>
+    </div>
+    <div class="size-object" style="display:inline-block">
+      <div class="size-child-object" style="width:200px;margin: 10px;">Margin 10px</div>
+    </div>
+    <div class="size-object" style="display:inline-block">
+      <div class="size-child-object" style="width:200px;margin: 5px 10px;">Margin 5px 10px</div>
+    </div>
+    <div class="size-object" style="display:inline-block">
+      <div class="size-child-object" style="width:200px;margin: 5px 10px 1px;">Margin 5px 10px 1px</div>
+    </div>
+    <div class="size-object" style="display:inline-block">
+      <div class="size-child-object" style="width:200px;margin: 5px 10px 1px 2px;">Margin 5px 10px 1px 2px</div>
+    </div>
+    <hr>
+    <h2 id="padding-specific-side">Paddingds for Specific Side</h2>
+    <div class="size-child-object" style="display:inline-block;">Before padding</div>
+    <div class="size-child-object" style="display:inline-block;padding-top:50px;">padding-top: 50px</div>
+    <div class="size-child-object" style="display:inline-block;padding-bottom:50px;">padding-bottom: 50px</div>
+    <div class="size-child-object" style="display:inline-block;padding-left:50px;">padding-left: 50px</div>
+    <div class="size-child-object" style="display:inline-block;padding-right:50px;">padding-right: 50px</div>
+    <hr>
+    <h2 id="margin-specific-side">Margins for Specific Side</h2>
+    <div class="size-object" style="display:inline-block">
+      <div class="size-child-object" style="display:inline-block;">Before padding</div>
+    </div>
+    <div class="size-object" style="display:inline-block">
+      <div class="size-child-object" style="display:inline-block;margin-top:50px;">margin-top: 50px</div>
+    </div>
+    <div class="size-object" style="display:inline-block">
+      <div class="size-child-object" style="display:inline-block;margin-bottom:50px;">margin-bottom: 50px</div>
+    </div>
+    <div class="size-object" style="display:inline-block">
+      <div class="size-child-object" style="display:inline-block;margin-left:50px;">margin-left: 50px</div>
+    </div>
+    <div class="size-object" style="display:inline-block">
+      <div class="size-child-object" style="display:inline-block;margin-right:50px;">margin-right:50px</div>
+    </div>
+    <hr>
+    <h2 id="box-sizing">Box Sizing</h2>
+    <h3>Box Examples</h3>
+    <div class="box-sizing-parent" style="width: 100px; height: auto; padding: 5px; margin: 5px;">div Parent</div>
+    <div class="box-sizing-child" style="width: 100px; height: auto; padding: 5px;  margin: 5px;">div Child</div>
+
+    <h3>Original Box Sizing</h3>
+    <div class="box-sizing-parent">
+      <div class="box-sizing-child"></div>
+    </div>
+
+    <h3>Content Box</h3>
+    <div class="box-sizing-parent">
+      <div class="box-sizing-child" style="box-sizing: content-box;"></div>
+    </div>
+
+    <h3>Border Box</h3>
+    <div class="box-sizing-parent">
+      <div class="box-sizing-child" style="box-sizing: border-box;"></div>
+    </div>
+    <!--End Main-->
+
+    <!--Back button-->
+    <div style="display: flex; justify-content: center; padding-top: 30px; padding-bottom: 80px">
+      <a href="index.html" class="btn-small">Back</a>
+    </div>
+    <!--End back button-->
+
+    <!--Footer-->
+    <footer>
+      <div class="btn-group">
+        <a href="chapter9.html" class="btn-previous">←</a>
+        <a href="chapter11.html" class="btn-next">→</a>
+      </div>
+      <p>HTML & CSS Introduction</p>
+    </footer>
+    <!--End footer-->
+</body>
+</html>

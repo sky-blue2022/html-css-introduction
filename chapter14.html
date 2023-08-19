@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/practice.css" />
+    <link rel="stylesheet" href="css/component.css" />
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+    <title>14. CSS: Layout – Key Concept</title>
+  </head>
+  <body>
+    <!--Top bar-->
+    <div class="top-bar" style="text-align: center; background-color: white">
+      <a href="index.html" class="top-bar-icon">
+        <img src="img/html5.png" />
+        <img src="img/css3.png" />
+      </a>
+    </div>
+    <!--End top bar-->
+
+    <!--Main-->
+    <h1>Chapter 14. CSS: Layout – Key Concept</h1>
+    <h2>inline, block and inline-block</h2>
+    <h3>1. Default Width</h3>
+    <div class="inline-element">Inline</div>
+    <div class="block-element">Block</div>
+    <div class="inline-block-element">Inline-Block</div>
+
+    <h3>2. Line Break</h3>
+    <div class="inline-element">Inline 1</div>
+    <div class="inline-element">Inline 2</div>
+    <div class="inline-block-element">Inline-Block 1</div>
+    <div class="inline-block-element">Inline-Block 2</div>
+    <div class="block-element">Block 1</div>
+    <div class="block-element">Block 2</div>
+
+    <h3 id="width-and-height">3. width and height</h3>
+    <div class="inline-element" style="width: 150px; height: 50px">Inline 1</div>
+    <div class="inline-element" style="width: 150px; height: 50px">Inline 2</div>
+    <div class="block-element" style="width: 150px; height: 50px">Block 1</div>
+    <div class="block-element" style="width: 150px; height: 50px">Block 2</div>
+    <div class="inline-block-element" style="width: 150px; height: 50px">Inline-Block 1</div>
+    <div class="inline-block-element" style="width: 150px; height: 50px">Inline-Block 2</div>
+
+    <h3>4. padding and margin</h3>
+    <h4>padding</h4>
+    <div class="inline-element" style="width: 150px; height: 50px; padding: 10px">Inline 1</div>
+    <div class="inline-element" style="width: 150px; height: 50px; padding: 10px">Inline 2</div>
+    <div class="block-element" style="width: 150px; height: 50px; padding: 10px">Block 1</div>
+    <div class="block-element" style="width: 150px; height: 50px; padding: 10px">Block 2</div>
+    <div class="inline-block-element" style="width: 150px; height: 50px; padding: 10px">Inline-Block 1</div>
+    <div class="inline-block-element" style="width: 150px; height: 50px; padding: 10px">Inline-Block 2</div>
+
+    <h4>margin</h4>
+    <div class="inline-element" style="width: 150px; height: 50px; margin: 30px">Inline 1</div>
+    <div class="inline-element" style="width: 150px; height: 50px; margin: 30px">Inline 2</div>
+    <div class="block-element" style="width: 150px; height: 50px; margin: 10px">Block 1</div>
+    <div class="block-element" style="width: 150px; height: 50px; margin: 10px">Block 2</div>
+    <div class="inline-block-element" style="width: 150px; height: 50px; margin: 10px">Inline-Block 1</div>
+    <div class="inline-block-element" style="width: 150px; height: 50px; margin: 10px">Inline-Block 2</div>
+
+    <h3 id="text-align">5. text-align</h3>
+    <h4>text-align: center</h4>
+    <div class="container" style="text-align: center">
+      <div class="inline-element">Inline</div>
+    </div>
+    <div class="container" style="text-align: center">
+      <div class="block-element" style="width: 150px">Block</div>
+    </div>
+    <div class="container" style="text-align: center">
+      <div class="inline-block-element" style="width: 150px">Inline-Block</div>
+    </div>
+
+    <h4>text-align: right</h4>
+    <div class="container" style="text-align: right">
+      <div class="inline-element">Inline</div>
+    </div>
+    <div class="container" style="text-align: right">
+      <div class="block-element" style="width: 150px">Block</div>
+    </div>
+    <div class="container" style="text-align: right">
+      <div class="inline-block-element" style="width: 150px">Inline-Block</div>
+    </div>
+
+    <h3>margin: auto</h3>
+    <h4>margin: auto</h4>
+    <div class="container">
+      <div class="inline-element" style="margin: auto">Inline</div>
+    </div>
+    <div class="container">
+      <div class="block-element" style="width: 150px; margin: auto">Block</div>
+    </div>
+    <div class="container">
+      <div class="inline-block-element" style="width: 150px; margin: auto">Inline-Block</div>
+    </div>
+
+    <h4>margin-left: auto</h4>
+    <div class="container">
+      <div class="inline-element" style="margin-left: auto">Inline</div>
+    </div>
+    <div class="container">
+      <div class="block-element" style="width: 150px; margin-left: auto">Block</div>
+    </div>
+    <div class="container">
+      <div class="inline-block-element" style="width: 150px; margin-left: auto">Inline-Block</div>
+    </div>
+
+    <h3 id="nesting">Nesting</h3>
+    <h4>Inline Element</h4>
+    <div class="inline-element" style="width: 300px; height: 200px">
+      Inline Parent
+      <div class="inline-element" style="width: 150px; height: 50px; margin: 10px">Inline Child</div>
+      <div class="block-element" style="width: 150px; height: 50px; margin: 10px">Block Child</div>
+      <div class="inline-block-element" style="width: 150px; height: 50px; margin: 10px">Inline-Block Child</div>
+    </div>
+    <br />
+    <h4>Block Element</h4>
+    <div class="block-element" style="width: 300px; height: 200px; padding: 10px">
+      Block Parent<br />
+      <div class="inline-element" style="width: 150px; height: 50px; margin: 10px">Inline Child</div>
+      <div class="block-element" style="width: 150px; height: 50px; margin: 10px">Block Child</div>
+      <div class="inline-block-element" style="width: 150px; height: 50px; margin: 10px">Inline-Block Child</div>
+    </div>
+    <br />
+    <h4>Inline-Block Element</h4>
+    <div class="inline-block-element" style="width: 300px; height: 200px; padding: 10px">
+      Inline-Block Parent<br />
+      <div class="inline-element" style="width: 150px; height: 50px; margin: 10px">Inline Child</div>
+      <div class="block-element" style="width: 150px; height: 50px; margin: 10px">Block Child</div>
+      <div class="inline-block-element" style="width: 150px; height: 50px; margin: 10px">Inline-Block Child</div>
+    </div>
+    <hr />
+    <h2 id="display-none">display: none</h2>
+    <h3>Original</h3>
+    <div class="bg-only" style="background-color: red"></div>
+    <div class="bg-only" style="background-color: green"></div>
+    <div class="bg-only" style="background-color: blue"></div>
+
+    <h3>Display: None for Green</h3>
+    <div class="bg-only" style="background-color: red"></div>
+    <div class="bg-only" style="background-color: green; display: none"></div>
+    <div class="bg-only" style="background-color: blue"></div>
+    <!--End Main-->
+
+    <!--Back button-->
+    <div style="display: flex; justify-content: center; padding-top: 30px; padding-bottom: 80px">
+      <a href="index.html" class="btn-small">Back</a>
+    </div>
+    <!--End back button-->
+
+    <!--Footer-->
+    <footer>
+      <div class="btn-group">
+        <a href="chapter13.html" class="btn-previous">←</a>
+        <a href="chapter15.html" class="btn-next">→</a>
+      </div>
+      <p>HTML & CSS Introduction</p>
+    </footer>
+    <!--End footer-->
+  </body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/practice.css" />
+    <link rel="stylesheet" href="css/component.css" />
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+    <title>16.CSS: Styling Lists</title>
+  </head>
+  <body>
+    <!--Top bar-->
+    <div class="top-bar" style="text-align: center; background-color: white">
+      <a href="index.html" class="top-bar-icon">
+        <img src="img/html5.png" />
+        <img src="img/css3.png" />
+      </a>
+    </div>
+    <!--End top bar-->
+
+    <!--Main-->
+    <h1>Chapter 16.CSS: Styling Lists</h1>
+    <h2>list-style-type</h2>
+    <h3>Unordered List Marker</h3>
+    <div class="list-container">
+      <div class="item">
+        <h4>Original</h4>
+        <ul>
+          <li>xxxxxxx</li>
+          <ul>
+            <li>xxxxxxx</li>
+            <ul>
+              <li>xxxxxxx</li>
+            </ul>
+          </ul>
+        </ul>
+      </div>
+      <div class="item">
+        <h4>disc</h4>
+        <ul style="list-style-type: disc">
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+        </ul>
+      </div>
+      <div class="item">
+        <h4>circle</h4>
+        <ul style="list-style-type: circle">
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+        </ul>
+      </div>
+      <div class="item">
+        <h4>square</h4>
+        <ul style="list-style-type: square">
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Ordered List Marker</h3>
+    <div class="list-container">
+      <div class="item">
+        <h4>Original</h4>
+        <ol>
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+        </ol>
+      </div>
+      <div class="item">
+        <h4>decimal</h4>
+        <ol style="list-style-type: decimal">
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+        </ol>
+      </div>
+      <div class="item">
+        <h4>decimal-leading-zero</h4>
+        <ol style="list-style-type: decimal-leading-zero">
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+        </ol>
+      </div>
+      <div class="item">
+        <h4>lower-alpha</h4>
+        <ol style="list-style-type: lower-alpha">
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+        </ol>
+      </div>
+      <div class="item">
+        <h4>upper-alpha</h4>
+        <ol style="list-style-type: upper-alpha">
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+        </ol>
+      </div>
+      <div class="item">
+        <h4>lower-roman</h4>
+        <ol style="list-style-type: lower-roman">
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+        </ol>
+      </div>
+      <div class="item">
+        <h4>upper-roman</h4>
+        <ol style="list-style-type: upper-roman">
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+        </ol>
+      </div>
+      <div class="item">
+        <h4>lower-greek</h4>
+        <ol style="list-style-type: lower-greek">
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+        </ol>
+      </div>
+      <div class="item">
+        <h4>upper-greek</h4>
+        <ol style="list-style-type: upper-greek">
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+        </ol>
+      </div>
+      <div class="item">
+        <h4>lower-latin</h4>
+        <ol style="list-style-type: lower-latin">
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+        </ol>
+      </div>
+      <div class="item">
+        <h4>upper-latin</h4>
+        <ol style="list-style-type: upper-latin">
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+        </ol>
+      </div>
+      <div class="item">
+        <h4>georgian</h4>
+        <ol style="list-style-type: georgian">
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+        </ol>
+      </div>
+      <div class="item">
+        <h4>hebrew</h4>
+        <ol style="list-style-type: hebrew">
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+        </ol>
+      </div>
+      <div class="item">
+        <h4>cjk-ideographic</h4>
+        <ol style="list-style-type: cjk-ideographic">
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+        </ol>
+      </div>
+      <div class="item">
+        <h4>hiragana</h4>
+        <ol style="list-style-type: hiragana">
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+        </ol>
+      </div>
+      <div class="item">
+        <h4>katakana</h4>
+        <ol style="list-style-type: katakana">
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+        </ol>
+      </div>
+      <div class="item">
+        <h4>korean-hangul-formal</h4>
+        <ol style="list-style-type: korean-hangul-formal">
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+        </ol>
+      </div>
+    </div>
+
+    <h3>No Marker</h3>
+    <div class="list-container">
+      <div class="item">
+        <h4>none</h4>
+        <ol style="list-style-type: none">
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+        </ol>
+      </div>
+    </div>
+
+    <h2 id="list-style-image">list-style-image</h2>
+    <h3>list-style-image with different image size</h3>
+    <div class="list-container">
+      <div class="item">
+        <h4>image 16px x 16px</h4>
+        <ol style="list-style-image: url(img/smile_16x16.png)">
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+        </ol>
+      </div>
+      <div class="item">
+        <h4>image 30px x 30px</h4>
+        <ol style="list-style-image: url(img/smile_30x30.png)">
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+        </ol>
+      </div>
+    </div>
+
+    <h3>Icon marker using background image</h3>
+    <div class="list-container">
+      <div class="item">
+        <h4>Before size adjusted</h4>
+        <ul style="list-style-type: none">
+          <li class="list-icon">xxxxxxxxxxxxxxx</li>
+          <li class="list-icon">xxxxxxxxxxxxxxx</li>
+          <li class="list-icon">xxxxxxxxxxxxxxx</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="list-style-position">list-style-position</h2>
+    <div class="list-container list-style-position-check">
+      <div class="item">
+        <h4>Original</h4>
+        <ul>
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+        </ul>
+      </div>
+      <div class="item">
+        <h4>Original</h4>
+        <ul style="list-style-position: outside">
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+        </ul>
+      </div>
+      <div class="item">
+        <h4>Original</h4>
+        <ul style="list-style-position: inside">
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+          <li>xxxxxxxxxxxxxxx</li>
+        </ul>
+      </div>
+    </div>
+    <!--End Main-->
+
+    <!--Back button-->
+    <div style="display: flex; justify-content: center; padding-top: 30px; padding-bottom: 80px">
+      <a href="index.html" class="btn-small">Back</a>
+    </div>
+    <!--End back button-->
+
+    <!--Footer-->
+    <footer>
+      <div class="btn-group">
+        <a href="chapter15.html" class="btn-previous">←</a>
+        <a href="chapter17.html" class="btn-next">→</a>
+      </div>
+      <p>HTML & CSS Introduction</p>
+    </footer>
+    <!--End footer-->
+  </body>
+</html>

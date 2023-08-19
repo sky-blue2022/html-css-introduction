@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/component.css" />
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+    <title>5. HTML: Create Lists and Tables</title>
+  </head>
+  <body>
+    <!--Top bar-->
+    <div class="top-bar" style="text-align: center; background-color: white">
+      <a href="index.html" class="top-bar-icon">
+        <img src="img/html5.png" />
+        <img src="img/css3.png" />
+      </a>
+    </div>
+    <!--End top bar-->
+
+    <!--Main-->
+    <h1>Chapter 5. HTML: Create Lists and Tables</h1>
+    <h2>Lists</h2>
+
+    <h3>1. Unordered Lists</h3>
+
+    <ul type="none">
+      <li>Greek Salad</li>
+      <li>Avocado Salad</li>
+      <li>Tomato Salad</li>
+    </ul>
+
+    <ul type="square">
+      <li>Minestrone</li>
+      <li>Clam Chowder</li>
+      <li>Corn Soup</li>
+    </ul>
+
+    <h3>2. Ordered Lists: Count Again</h3>
+    <ol>
+      <li>item</li>
+      <li>item</li>
+      <li>item</li>
+    </ol>
+
+    <p>Count Again</p>
+
+    <ol start="4">
+      <li>item</li>
+      <li>item</li>
+      <li>item</li>
+    </ol>
+
+    <h3>3. Ordered Lists: Various Markers</h3>
+    <ol type="a">
+      <li>item</li>
+      <li>item</li>
+      <li>item</li>
+    </ol>
+    <ol type="A">
+      <li>item</li>
+      <li>item</li>
+      <li>item</li>
+    </ol>
+    <ol type="i">
+      <li>item</li>
+      <li>item</li>
+      <li>item</li>
+    </ol>
+
+    <h3>4. Nested Lists</h3>
+    <ol>
+      <li>item</li>
+      <li>item</li>
+      <ul>
+        <li>item</li>
+        <li>item</li>
+      </ul>
+      <li>item</li>
+      <li>item</li>
+    </ol>
+
+    <hr />
+
+    <h2>Tables</h2>
+    <h3>1. Standard Table</h3>
+    <table>
+      <tr>
+        <th>header</th>
+        <th>header</th>
+        <th>header</th>
+      </tr>
+      <tr>
+        <td>item</td>
+        <td>item</td>
+        <td>item</td>
+      </tr>
+      <tr>
+        <td>item</td>
+        <td>item</td>
+        <td>item</td>
+      </tr>
+    </table>
+
+    <h3>2. Merge cells horizontally</h3>
+    <table>
+      <tr>
+        <th>header</th>
+        <th>header</th>
+        <th>header</th>
+      </tr>
+      <tr>
+        <td colspan="2">item</td>
+        <td>item</td>
+      </tr>
+      <tr>
+        <td>item</td>
+        <td>item</td>
+        <td>item</td>
+      </tr>
+    </table>
+
+    <h3>3. Merge cells vertically</h3>
+    <table>
+      <tr>
+        <th>header</th>
+        <th>header</th>
+        <th>header</th>
+      </tr>
+      <tr>
+        <td rowspan="2">item</td>
+        <td>item</td>
+        <td>item</td>
+      </tr>
+      <tr>
+        <td>item</td>
+        <td>item</td>
+      </tr>
+    </table>
+
+    <style>
+      th,
+      td {
+        background-color: lightblue;
+      }
+    </style>
+    <!--End Main-->
+
+    <!--Back button-->
+    <div style="display: flex; justify-content: center; padding-top: 30px; padding-bottom: 80px">
+      <a href="index.html" class="btn-small">Back</a>
+    </div>
+    <!--End back button-->
+
+    <!--Footer-->
+    <footer>
+      <div class="btn-group">
+        <a href="chapter4.html" class="btn-previous">←</a>
+        <a href="chapter6.html" class="btn-next">→</a>
+      </div>
+      <p>HTML & CSS Introduction</p>
+    </footer>
+    <!--End footer-->
+  </body>
+</html>

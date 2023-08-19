@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/component.css" />
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+    <title>4. HTML: Add Links and Images</title>
+  </head>
+  <body>
+    <!--Top bar-->
+    <div class="top-bar" style="text-align: center; background-color: white">
+      <a href="index.html" class="top-bar-icon">
+        <img src="img/html5.png" />
+        <img src="img/css3.png" />
+      </a>
+    </div>
+    <!--End top bar-->
+
+    <!--Main-->
+    <h1>Chapter 4. HTML: Add Links and Images</h1>
+
+    <h1>Today's Menu</h1>
+    <h2><img src="img/salad.jpg" width="50px" />Salad</h2>
+    <ul>
+      <li>Greek Salad</li>
+      <li>Avocado Salad</li>
+      <li>Tomato Salad</li>
+    </ul>
+    <h2><img src="img/soup.jpg" width="50px" />Soup</h2>
+    <ul>
+      <li>Minestrone</li>
+      <li>Clam Chowder</li>
+      <li>Corn Soup</li>
+    </ul>
+
+    <h2>Hyperlinks</h2>
+    <a href="https://www.google.com/">To Google</a>
+    <br />
+    <a href="chapter2.html">Chapter 2. Preparing for Website Coding</a>
+    <br />
+    <a href="chapter3.html">Chapter 3. HTML Basics</a>
+    <br />
+    <a href="chapter4.html">Chapter 4. HTML: Add Links and Images</a>
+    <br />
+    <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">To Google with a new tab</a>
+    <br />
+    <br />
+    <a href="https://www.google.com/">
+      <img src="img/search-icon.jpg" alt="search" width="50px" />
+    </a>
+
+    <!--Hyperlinks to Specific Location on Web Page-->
+    <section id="section_1" style="height: 100vh; background-color: lightblue">
+      <h1>Section 1</h1>
+      <a href="#section_2">Go to section 2</a>
+    </section>
+    <section id="section_2" style="height: 100vh; background-color: lightyellow">
+      <h1>Section 2</h1>
+      <a href="#section_1">Go to section 1</a>
+    </section>
+    <!--End Main-->
+
+    <!--Back button-->
+    <div style="display: flex; justify-content: center; padding-top: 30px; padding-bottom: 80px">
+      <a href="index.html" class="btn-small">Back</a>
+    </div>
+    <!--End back button-->
+
+    <!--Footer-->
+    <footer>
+      <div class="btn-group">
+        <a href="chapter3.html" class="btn-previous">←</a>
+        <a href="chapter5.html" class="btn-next">→</a>
+      </div>
+      <p>HTML & CSS Introduction</p>
+    </footer>
+    <!--End footer-->
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/component.css" />
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+    <title>6. HTML: Create Forms</title>
+  </head>
+  <body>
+    <!--Top bar-->
+    <div class="top-bar" style="text-align: center; background-color: white">
+      <a href="index.html" class="top-bar-icon">
+        <img src="img/html5.png" />
+        <img src="img/css3.png" />
+      </a>
+    </div>
+    <!--End top bar-->
+
+    <!--Main-->
+    <h1>Chapter 6. HTML: Create Forms</h1>
+    <h2>Forms</h2>
+    <h3>1. Text Input Forms</h3>
+    <form>
+      <input type="text" placeholder="username" name="username" />
+      <input type="email" placeholder="email" name="email" />
+      <textarea placeholder="comment" name="comment"></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <h3>2. Radio Buttons and Check Boxes</h3>
+    <form>
+      <h3>Radio Button</h3>
+      <input type="radio" name="color" value="black" />Black <input type="radio" name="color" value="white" checked />White
+      <h3>Check Box</h3>
+      <input type="checkbox" name="color" value="black" />Black <input type="checkbox" name="color" value="white" checked />White
+    </form>
+    <h3>3. Select Box</h3>
+    <form>
+      <h4>Select Box: Single Selection</h4>
+      <select name="days-of-week">
+        <option value="mon">Monday</option>
+        <option value="tue">Tuesday</option>
+        <option value="wed">Wednesday</option>
+        <option value="thu">Thursday</option>
+        <option value="fri">Friday</option>
+        <option value="sat">Saturday</option>
+        <option value="sun">Sunday</option>
+      </select>
+    </form>
+    <form>
+      <h4>Select Box: Multiple Selection</h4>
+      <select name="days-of-week" multiple>
+        <option value="mon">Monday</option>
+        <option value="tue">Tuesday</option>
+        <option value="wed">Wednesday</option>
+        <option value="thu">Thursday</option>
+        <option value="fri">Friday</option>
+        <option value="sat">Saturday</option>
+        <option value="sun">Sunday</option>
+      </select>
+    </form>
+    <form>
+      <h4>Select Box: Grouping</h4>
+      <select name="days-of-week">
+        <optgroup label="Weekday">
+          <option value="mon">Monday</option>
+          <option value="tue">Tuesday</option>
+          <option value="wed">Wednesday</option>
+          <option value="thu">Thursday</option>
+          <option value="fri">Friday</option>
+        </optgroup>
+        <optgroup label="Weekend">
+          <option value="sat">Saturday</option>
+          <option value="sun">Sunday</option>
+        </optgroup>
+      </select>
+    </form>
+    <h3>4. Add Labels</h3>
+    <form>
+      <h4>Radio Button</h4>
+      <input id="black" type="radio" name="color" value="black" />
+      <label for="black">Black</label>
+      <input id="white" type="radio" name="color" value="white" checked />
+      <label for="white">White</label>
+      <h4>Check Box</h4>
+      <input id="black-check" type="checkbox" name="color" value="black" />
+      <label for="black-check">Black</label>
+      <input id="white-check" type="checkbox" name="color" value="white" checked />
+      <label for="white-check">White</label>
+    </form>
+    <h3>5. Auto Complete and Disabled</h3>
+    <form>
+      <input type="text" placeholder="username" name="username" autocomplete="off" />
+      <input type="email" placeholder="email" name="email" autocomplete="off" />
+      <textarea placeholder="comment" name="comment" disabled></textarea>
+      <button type="submit" disabled>Send</button>
+    </form>
+    <!--End Main-->
+
+    <!--Back button-->
+    <div style="display: flex; justify-content: center; padding-top: 30px; padding-bottom: 80px">
+      <a href="index.html" class="btn-small">Back</a>
+    </div>
+    <!--End back button-->
+
+    <!--Footer-->
+    <footer>
+      <div class="btn-group">
+        <a href="chapter5.html" class="btn-previous">←</a>
+        <a href="chapter7.html" class="btn-next">→</a>
+      </div>
+      <p>HTML & CSS Introduction</p>
+    </footer>
+    <!--End footer-->
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/practice.css" />
+    <link rel="stylesheet" href="css/component.css" />
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+    <title>8. CSS Basics</title>
+    <style>
+      h1{
+        color:blue;
+        text-align: center;
+        background-color: lightblue;
+        border-color: blue;
+        border-style: solid;
+        border-width: 5px;
+        border-radius: 5px;
+        margin:20px;
+        padding:20px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Top bar-->
+    <div class="top-bar" style="text-align: center; background-color: white">
+      <a href="index.html" class="top-bar-icon">
+        <img src="img/html5.png" />
+        <img src="img/css3.png" />
+      </a>
+    </div>
+    <!--End top bar-->
+
+    <!--Main-->
+    <h1><span style="color:red">Chapter 8.</span> CSS Basics</h1>
+    <h2 class="first-class">Basic Selectors</h2>
+    <ul>
+      <li>Type Selector: select elements by tags</li>
+      <li class="first-class second-class">Class Selector: select elements by class </li>
+      <li id="first-id">ID Selector: select an element by id</li>
+    </ul>
+
+    <h2>Descendant Selector</h2>
+    <header>
+      <p class="primary">This is test for <span>Type Selector + Type Selector<span></p>
+    </header>
+    <section>
+      <p class="primary">This is test for <span>Type Selector + Class Selector</span></p>
+    </section>
+    <!--End Main-->
+
+    <!--Back button-->
+    <div style="display: flex; justify-content: center; padding-top: 30px; padding-bottom: 80px">
+      <a href="index.html" class="btn-small">Back</a>
+    </div>
+    <!--End back button-->
+
+    <!--Footer-->
+    <footer>
+      <div class="btn-group">
+        <a href="chapter7.html" class="btn-previous">←</a>
+        <a href="chapter9.html" class="btn-next">→</a>
+      </div>
+      <p>HTML & CSS Introduction</p>
+    </footer>
+    <!--End footer-->
+  </body>
+</html>

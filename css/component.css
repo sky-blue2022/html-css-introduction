@@ -1,0 +1,254 @@
+/* Chapter 17. CSS: Styling Components */
+
+/* Buttons */
+.btn-flex{
+    background-color:#2197A2;
+    color: white;
+    border-style: none;
+    border-radius: 25px;
+    width: 200px; 
+    height: 50px; 
+    font-size: 1.5rem;
+    font-family: roboto, sans-serif;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-inline{
+    background-color:#2197A2;
+    color: white;
+    border-style: none;
+    border-radius: 25px;
+    width: 200px; 
+    height: 50px; 
+    font-size: 1.5rem;
+    font-family: roboto, sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+}
+
+.btn-white-bg{
+    background-color:white;
+    color: #2197A2;
+    border: solid 2px #2197A2;
+    border-radius: 25px;
+    width: 200px; 
+    height: 50px; 
+    font-size: 1.5rem;
+    font-family: roboto, sans-serif;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-small{
+    background-color:#2197A2;
+    color: white;
+    border-style: none;
+    border-radius: 15px;
+    width: 150px; 
+    height: 30px; 
+    font-size: 1rem;
+    font-family: roboto, sans-serif;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-group{
+    display: flex; 
+    justify-content: center; 
+    list-style: none; 
+    gap: 5px;
+}
+
+.btn-previous{
+    background-color:#2197A2;
+    color: white;
+    border-style: none;
+    width: 60px; 
+    height: 25px; 
+    font-size: 1rem;
+    font-family: roboto, sans-serif;
+    border-radius: 25px 0px 0px 25px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 25px;
+}
+
+.btn-next{
+    background-color:#2197A2;
+    color: white;
+    border-style: none;
+    width: 60px; 
+    height: 25px; 
+    font-size: 1rem;
+    font-family: roboto, sans-serif;
+    border-radius: 0px 25px 25px 0px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 25px;
+}
+
+/* Cards */
+.card{
+    width: 200px;
+    height: 250px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.card-img{
+    flex-basis: 60%;
+    background: url(../img/salad.jpg) center center/cover no-repeat; 
+    border-radius: 10px;
+}
+
+.card-body{
+    flex-basis:40%;
+    display: flex; 
+    flex-direction: column;
+}
+
+.card-title{
+    flex-basis: 70%;
+    padding: 5px;
+}
+
+.card-body .card-btn{
+    flex-basis: 30%;
+    background-color:#2197A2;
+    color: white !important;
+    border-style: none;
+    border-radius: 15px;
+    width: 100px;
+    height: 20px; 
+    font-size: 0.8rem;
+    font-family: roboto, sans-serif;
+    text-decoration: none;
+    margin-left:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card a{
+    color:#196060;
+    flex-basis: 100%; 
+    display: flex; 
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.card-icon{
+    flex-basis: 30%;
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: flex-end;
+}
+
+.card-icon img{
+    height: 20px;
+}
+
+.card-bg{
+    flex-basis: 60%;
+    background: url(../img/card-bg-1.png) center center/cover no-repeat;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-overlay-text{
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Bars */
+.top-bar{
+    width: 100%;
+    height: 50px;
+    background-color: azure;
+    margin-bottom: 20px;
+}
+
+.top-bar a{
+    text-decoration: none;
+}
+
+.top-bar-icon img{
+    width: auto;
+    height: 30px;
+    margin: 10px 0px;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: azure;
+    margin: 0px;
+    padding-top: 5px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+footer p{
+    color:#006e78; 
+    font-size:0.8rem; 
+    margin: 5px; 
+    padding:0;
+}
+
+/*
+.link-btn{
+    background: url(../img/css3.png) no-repeat 15px center/1.2rem;
+    background-color:white;
+    color: #2197A2;
+    border: solid 3px #2197A2;
+    border-radius: 25px;
+    width: 200px; 
+    height: 50px; 
+    font-size: 1.2rem;
+    font-family: roboto, sans-serif;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    padding-left:10px;
+}
+
+.link-btn span{
+    line-height:1.3rem; 
+    color:black;
+    font-size:1.3rem; 
+    font-weight:900; 
+    margin:0px 0px 0px 10px;
+}
+*/
+
+/* Note */
+.note-section{
+    border: solid 1px #2197A2;
+    width: 80%;
+    min-height: 50vh;
+    padding:10px;
+    margin: auto;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/practice.css" />
+    <link rel="stylesheet" href="css/component.css" />
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+    <title>12. CSS: Styling Backgrounds</title>
+  </head>
+  <body>
+    <!--Top bar-->
+    <div class="top-bar" style="text-align: center; background-color: white">
+      <a href="index.html" class="top-bar-icon">
+        <img src="img/html5.png" />
+        <img src="img/css3.png" />
+      </a>
+    </div>
+    <!--End top bar-->
+
+    <!--Main-->
+    <h1>Chapter 12. CSS: Styling Backgrounds</h1>
+    <h2>Background Color</h2>
+    <!--Red Color-->
+    <div style="display: flex; font-size: 0.8rem">
+      <div class="bg-color-box" style="color: white; background-color: red">Keyword: red</div>
+      <div class="bg-color-box" style="color: white; background-color: #ff0000">HEX: #FF0000</div>
+      <div class="bg-color-box" style="color: white; background-color: rgb(255, 0, 0)">RGB: rgb(255,0,0)</div>
+      <div class="bg-color-box" style="color: white; background-color: rgba(255, 0, 0, 0.5)">RGBA: rgba(255,0,0,0.5)</div>
+    </div>
+    <!--Green Color-->
+    <div style="display: flex; font-size: 0.8rem">
+      <div class="bg-color-box" style="color: white; background-color: green">Keyword: green</div>
+      <div class="bg-color-box" style="color: white; background-color: #008000">HEX: #008000</div>
+      <div class="bg-color-box" style="color: white; background-color: rgb(0, 128, 0)">RGB: rgb(0,128,0)</div>
+      <div class="bg-color-box" style="color: white; background-color: rgb(0, 128, 0, 0.5)">RGBA: rgb(0,128,0,0.5)</div>
+    </div>
+    <!--Blue Color-->
+    <div style="display: flex; font-size: 0.8rem">
+      <div class="bg-color-box" style="color: white; background-color: blue">Keyword: blue</div>
+      <div class="bg-color-box" style="color: white; background-color: #0000ff">HEX: #0000FF</div>
+      <div class="bg-color-box" style="color: white; background-color: rgb(0, 0, 255)">RGB: rgb(0,0,255)</div>
+      <div class="bg-color-box" style="color: white; background-color: rgba(0, 0, 255, 0.5)">RGBA: rgba(0,0,255,0.5)</div>
+    </div>
+    <!--Black Color-->
+    <div style="display: flex; font-size: 0.8rem">
+      <div class="bg-color-box" style="color: white; background-color: black">Keyword: black</div>
+      <div class="bg-color-box" style="color: white; background-color: #000000">HEX: #000000</div>
+      <div class="bg-color-box" style="color: white; background-color: rgb(0, 0, 0)">RGB: rgb(0,0,0)</div>
+      <div class="bg-color-box" style="color: white; background-color: rgba(0, 0, 0, 0.5)">RGBA: rgba(0,0,0,0.5)</div>
+    </div>
+    <hr />
+    <h2>Background Image without Size Setting</h2>
+    <div style="display: flex">
+      <div class="bg-img-frame bg-image-1"><span style="vertical-align: bottom"></span></div>
+      <div class="bg-img-frame bg-image-2"><span style="vertical-align: bottom"></span></div>
+    </div>
+    <hr />
+    <h2 id="bg-size">Background Image and Size</h2>
+    <div style="display: flex; flex-wrap: wrap">
+      <div class="bg-img-frame bg-image-1" style="background-size: cover">Cover</div>
+      <div class="bg-img-frame bg-image-1" style="background-size: contain">Contain</div>
+      <div class="bg-img-frame bg-image-1" style="background-size: 100%">Width 100%</div>
+      <div class="bg-img-frame bg-image-1" style="background-size: auto 100%">Height 100%</div>
+      <div class="bg-img-frame bg-image-1" style="background-size: 50%">Width 50%</div>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap">
+      <div class="bg-img-frame bg-image-2" style="background-size: cover">Cover</div>
+      <div class="bg-img-frame bg-image-2" style="background-size: contain">Contain</div>
+      <div class="bg-img-frame bg-image-2" style="background-size: 100%">Width 100%</div>
+      <div class="bg-img-frame bg-image-2" style="background-size: auto 100%">Height 100%</div>
+      <div class="bg-img-frame bg-image-2" style="background-size: auto 50%">Height 50%</div>
+    </div>
+    <hr />
+    <h2 id="bg-repeat">Background Image Repeat</h2>
+    <div style="display: flex; flex-wrap: wrap">
+      <div class="bg-img-frame bg-image-3" style="background-size: 25%; background-repeat: no-repeat">No Repeat</div>
+      <div class="bg-img-frame bg-image-3" style="background-size: 25%; background-repeat: repeat">Repeat</div>
+      <div class="bg-img-frame bg-image-3" style="background-size: 25%; background-repeat: repeat-x">Repeat-X</div>
+      <div class="bg-img-frame bg-image-3" style="background-size: 25%; background-repeat: repeat-y">Repeat-Y</div>
+    </div>
+    <hr />
+    <h2 id="bg-position">Background Image Position (%)</h2>
+    <div style="display: flex; flex-wrap: wrap">
+      <div class="bg-img-frame bg-image-3" style="background-size: 25%; background-position: 0% 0%">Position 0% 0%</div>
+      <div class="bg-img-frame bg-image-3" style="background-size: 25%; background-position: 50% 0%">Position 50% 0%</div>
+      <div class="bg-img-frame bg-image-3" style="background-size: 25%; background-position: 100% 0%">Position 100% 0%</div>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap">
+      <div class="bg-img-frame bg-image-3" style="background-size: 25%; background-position: 0% 50%">Position 0% 50%</div>
+      <div class="bg-img-frame bg-image-3" style="background-size: 25%; background-position: 50% 50%">Position 50% 50%</div>
+      <div class="bg-img-frame bg-image-3" style="background-size: 25%; background-position: 100% 50%">Position 100% 50%</div>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap">
+      <div class="bg-img-frame bg-image-3" style="background-size: 25%; background-position: 0% 100%">Position 0% 100%</div>
+      <div class="bg-img-frame bg-image-3" style="background-size: 25%; background-position: 50% 100%">Position 50% 100%</div>
+      <div class="bg-img-frame bg-image-3" style="background-size: 25%; background-position: 100% 100%">Position 100% 100%</div>
+    </div>
+
+    <h2>Background Image Position (Keyword)</h2>
+    <div style="display: flex; flex-wrap: wrap">
+      <div class="bg-img-frame bg-image-3" style="background-size: 25%; background-position: left top">Position left top</div>
+      <div class="bg-img-frame bg-image-3" style="background-size: 25%; background-position: center top">Position center top</div>
+      <div class="bg-img-frame bg-image-3" style="background-size: 25%; background-position: right top">Position right top</div>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap">
+      <div class="bg-img-frame bg-image-3" style="background-size: 25%; background-position: left center">Position left center</div>
+      <div class="bg-img-frame bg-image-3" style="background-size: 25%; background-position: center center">Position center center</div>
+      <div class="bg-img-frame bg-image-3" style="background-size: 25%; background-position: right center">Position right center</div>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap">
+      <div class="bg-img-frame bg-image-3" style="background-size: 25%; background-position: left bottom">Position left bottom</div>
+      <div class="bg-img-frame bg-image-3" style="background-size: 25%; background-position: center bottom">Position center bottom</div>
+      <div class="bg-img-frame bg-image-3" style="background-size: 25%; background-position: right bottom">Position right bottom</div>
+    </div>
+    <hr />
+    <h2>Background Attachment</h2>
+    <p>Check the right top icon</p>
+    <style>
+      body {
+        background-image: url(img/palm-tree-round.png);
+        background-size: 100px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 98% 10%;
+      }
+    </style>
+    <!--
+    <h2>Background Multiple Properties</h2>
+    <p>Check the center top icon</p>
+    <style>
+    body{
+        background: lightyellow url(img/palm-tree-round.png) no-repeat 50% 10%/100px fixed;
+    }
+    </style>
+    -->
+    <!--End Main-->
+
+    <!--Back button-->
+    <div style="display: flex; justify-content: center; padding-top: 30px; padding-bottom: 80px">
+      <a href="index.html" class="btn-small">Back</a>
+    </div>
+    <!--End back button-->
+
+    <!--Footer-->
+    <footer>
+      <div class="btn-group">
+        <a href="chapter11.html" class="btn-previous">←</a>
+        <a href="chapter13.html" class="btn-next">→</a>
+      </div>
+      <p>HTML & CSS Introduction</p>
+    </footer>
+    <!--End footer-->
+  </body>
+</html>

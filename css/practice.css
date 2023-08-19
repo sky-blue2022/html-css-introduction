@@ -1,0 +1,356 @@
+body{
+  background-color: white;
+  color: #196060;
+  font-family: roboto, sans-serif;
+/*  background-image: url(../img/monotone_bg.jpg); */
+/*  background-size: 100vw; */
+}
+
+li{
+  color:blue;
+}
+
+.first-class{
+  color:red;
+font-weight: bold;
+}
+
+.second-class{
+  background-color:aqua;
+}
+
+#first-id{
+  color:green;
+}
+
+header span{
+  background-color: lightcoral;
+  color: white;
+}
+
+section .primary span{
+  background-color: lightblue;
+  color: white;
+}
+
+/* Chapter 10. CSS: Sizing and Spacing */
+.size-object{
+  background-color: #B3EBEF;
+  margin:10px;
+  border:1px dotted white;
+}
+
+.size-child-object{
+  background-color: #1E838A;
+  color:white;
+}
+
+.box-sizing-parent{
+  background-color: #55D0DC;
+  margin:20px;
+  width:300px;
+  height:50px;
+  border:5px dotted #26BCCE;
+  padding:10px;
+}
+
+.box-sizing-child{
+  background-color: #E0F7F9;
+  border-style: solid;
+  border-color:#B3EBEF;
+  border-width:5px;
+  padding:10px;
+  width:100%;
+}
+
+/* Chapter 11. CSS: Styling Text and Images */
+.font-size-box{
+  width: 300px;
+  padding: 5px;
+  border:1px dotted #26BCCE;
+}
+
+.outline{
+  border:1px dotted #26BCCE;
+}
+
+.parent-box{
+  background-color: #55D0DC;
+  margin:20px;
+  width:300px;
+  border:5px dotted #26BCCE;
+  padding:30px;
+  box-sizing: border-box;
+}
+
+.child-box{
+  background-color: #E0F7F9;
+  border-style: solid;
+  border-color:#B3EBEF;
+  border-width:5px;
+}
+
+.vertical-align-check{
+  border:1px dotted #26BCCE;
+  line-height: 3;
+  width:300px;
+}
+
+.small-text{
+  font-size:0.5em;
+  line-height: 1;
+}
+
+table{
+  background-color: white;
+}
+
+th{
+  background-color: #1E838A;
+  color: white;
+}
+
+td{
+  background-color: #B3EBEF;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Chapter 12. CSS: Styling Backgrounds */
+.bg-color-box{
+  width: 200px;
+  height: 100px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.bg-img-frame{
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  padding: 10px;
+  border:2px solid seagreen;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+.bg-image-1{
+  background-image:url(../img/icecream_100x150.png);
+}
+
+.bg-image-2{
+  background-image:url(../img/sandwitch_150x100.png);
+}
+
+.bg-image-3{
+  background-image:url(../img/smile.svg);
+}
+
+/* Chapter 13. CSS: Styling Borders and Drawing Lines */
+.bg-only{
+  width: 300px;
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #B3EBEF;
+  box-sizing: border-box;
+}
+
+.bg-border{
+  width: 300px;
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #B3EBEF;
+  border-style: solid;
+  box-sizing: border-box;
+}
+
+.bg-border-radius{
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #B3EBEF;
+  text-align: center;
+  line-height: 250px;
+}
+
+/* Chapter 14. CSS: Layout – Key Concept */
+.inline-element{
+  display: inline;
+  border: 1px dotted #26BCCE;
+  background-color: #23ACBB
+}
+
+.block-element{
+  display: block;
+  border:1px dotted #26BCCE;
+  background-color: #B3EBEF;
+}
+
+.inline-block-element{
+  display: inline-block;
+  border: 1px dotted #26BCCE;
+  background-color: #55D0DC
+}
+
+.container{
+  border: solid #23ACBB;
+  width: 300px;
+  padding: 15px;
+  margin: 10px;
+}
+
+/* Chapter 15. CSS: Layout – Flex Box */
+.flex-container{
+  border: solid #23ACBB;
+  width: 300px;
+  padding: 15px;
+  margin: 10px;
+}
+
+.flex-item{
+  margin: 5px;
+  padding: 5px;
+  background-color: #B3EBEF;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.flex-container-no-padding{
+  border: solid #23ACBB;
+  display: flex;
+  height: 100px;
+  width: 300px;
+  margin:10px;
+}
+
+.flex-item-to-grow-1{
+  padding: 5px;
+  background-color: green;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  height: 100px;
+  width: 50px;
+}
+
+.flex-item-to-grow-2{
+  padding: 5px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  height: 100px;
+  width: 50px;
+}
+
+.flex-item-to-grow-3{
+  padding: 5px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  height: 100px;
+  width: 50px;
+}
+
+.flex-item-to-shrink-1{
+  padding: 5px;
+  background-color: green;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  height: 100px;
+  width: 120px;
+}
+
+.flex-item-to-shrink-2{
+  padding: 5px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  height: 100px;
+  width: 120px;
+}
+
+.flex-item-to-shrink-3{
+  padding: 5px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  height: 100px;
+  width: 120px;
+}
+
+.flex-container-for-margin-auto{
+  border: solid #23ACBB;
+  display: flex;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+
+.flex-item-margin-auto{
+  background-color: #1E838A;
+  width: 50px;
+  height: 50px;
+}
+
+.flex-container-main{
+  display: flex;
+  border: solid blue 2px;
+  background-color: lightblue;
+  padding: 3px;
+  margin: 10px;
+  width: 300px;
+  height: 150px;
+}
+
+.flex-container-nested{
+  display: flex;
+  margin: 5px;
+  flex-basis: 50%;
+}
+
+/* Chapter 16. CSS: Styling Lists */
+.list-container
+{
+  margin:10px;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.item{
+  margin:2px;
+  background-color:#E0F7F9;
+  border-radius: 5px;
+  width: 200px;
+  height: 150px;
+}
+
+.item li{
+  color: #196060;
+}
+
+.item h4{
+  text-align: center;
+}
+
+.list-icon{
+  background: url(../img/smile_30x30.png) left/16px no-repeat;
+  margin-left:-20px;
+  padding-left:20px;
+}
+
+.list-style-position-check li{
+  background-color: lightblue;
+}
