@@ -164,7 +164,7 @@
 
 .card-bg{
     flex-basis: 60%;
-    background: url(../img/card-bg-1.png) center center/cover no-repeat;
+    background: url(../img/card-bg.png) center center/cover no-repeat;
     border-radius: 10px;
     display: flex;
     justify-content: center;
